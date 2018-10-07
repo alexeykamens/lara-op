@@ -1,0 +1,102 @@
+.loginbar {
+	border-bottom: 1px solid gray;
+	overflow: hidden;
+}
+.loginbar div{float: right;}
+.loginbar a{
+	box-sizing: border-box;
+	padding:0 20px;
+	border-right: 2px solid gray;
+}
+.loginbar a:nth-last-child(1){
+	border-right: none;
+}
+.statusbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 20px 0px;
+}
+.welcome, .cart{ 
+	border: 1px dashed gray;
+	box-sizing:border-box;
+	padding: 10px 50px;
+	position: relative;
+}
+.logo img{
+	width:100px;
+	-webkit-box-shadow: 14px 15px 25px 0px rgba(0,0,0,0.57);
+	-moz-box-shadow: 14px 15px 25px 0px rgba(0,0,0,0.57);
+	box-shadow: 14px 15px 25px 0px rgba(0,0,0,0.57);
+}
+.welcome::before{
+	content: "\f27a"; font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	font-size: 1.33em;
+
+	position: absolute;
+	left:20px;
+	top:-10px;
+	color:#12B844;
+	background: white;
+}
+.cart::before{
+	content: "\f218"; font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	font-size: 1.33em;
+	position: absolute;
+	right:20px;
+	top:-10px;
+	color:#12B844;
+	background: white;
+}
+.cartQnt{
+	position: absolute;
+	right:0px;
+	top:-28px;
+	width:20px;
+	height: 20px;
+	border-radius: 50% 50%;
+	border:1px solid  #E4E4E4;
+	color:black;
+	background: #E4E4E4;
+	text-align: center;
+}
+nav ul{
+	display: flex;
+	justify-content: space-between;
+	border-top: 2px solid black;
+	border-bottom: 1px solid gray;
+	padding: 0px;
+	margin: 5px 0px;
+}
+nav ul li{
+	text-align: center;
+	padding: 5px 10px;
+	border-right: 2px solid gray;
+	flex-grow: 1;
+
+}
+nav ul li:nth-last-child(1){
+	text-align: right;
+   flex-shrink: 1;
+   flex-basis: 400px;
+   border-right: 0px;
+}
+.salebar{
+	margin:5px 0px;
+background-image: linear-gradient(131deg, #d1d1d1 25%, #ffffff 25%, #ffffff 50%, #d1d1d1 50%, #d1d1d1 75%, #ffffff 75%, #ffffff 100%);
+background-size: 2.65px 3.05px;
+}
+.salebar ul{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 40px;
+	margin:5px;
+}
+.salebar li::before{
+	content: "\f005"; font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	color:#12B844;
+}

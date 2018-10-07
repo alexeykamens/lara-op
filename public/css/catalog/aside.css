@@ -1,0 +1,84 @@
+#category, #filter, .leftitems, #latestPrdct{
+	border-top:1px solid #3A3A3A;
+}
+.left ul{
+	padding: 5px;
+}
+.left ul li{
+	box-sizing: border-box;
+	padding-top: 10px;
+	border-top:1px solid lightgray;
+}
+div#category>ul>li p::after {
+    padding: 0px 8px;
+    color: #3A3A3A;
+    content: "+";
+    position: absolute;
+    right: 5px;
+}
+aside p{
+	position: relative;
+	margin: 0px;
+	text-align: left;
+}
+aside.left ul ul li::before {
+	content: "\203A";
+	margin-right: 15px;
+}
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 5px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 10px; /* Set a specific slider handle width */
+    height: 10px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+.leftitems li{
+	display: flex;
+	justify-content: space-between;
+}
+.card1 {
+    border-top: 1px solid lightgray;
+}
+.card1 img{
+    float: left;
+}
+.card1 div{
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.price {
+    color: #12B844;
+}
